@@ -1,0 +1,368 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+:root{
+--mc  : #22223b ;
+--sc  : #4a4e69 ;
+--tc  : #495057 ;
+--bg : #090909 ;
+--c : pink;
+}
+a{
+    text-decoration:  none !important;
+    color: black;
+}
+ul{
+    list-style: none !important;
+}
+body{
+    font-family:  'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+html::selection{
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+/*header*/
+header{
+    min-height: 20vh;
+    align-items: center;
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/*icons */
+.line{
+    width: 1px;
+    height: 20px;
+    background: black;
+    display: inline-block;
+    transform: translateY(4px);
+}
+header .icons i{
+    padding-inline: 4px ;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+header .icons i:hover{
+    color: pink;
+}
+
+/*icons */
+
+nav ul li{
+    display: inline-block;
+    padding-inline: 10px;
+    text-transform: uppercase;
+} 
+nav ul li a{
+    color: black !important;
+}
+
+
+
+/* dropdown */
+
+/*services dropdown*/
+.services, .team{
+    position: relative;
+}
+
+
+
+
+.servicesDropdown p{
+    cursor: pointer;
+    padding: 10px !important;
+    margin: 0;
+}
+/*services dropdown*/
+
+
+/* team dropdo<wn*/
+
+.teamDropdown p{
+    cursor: pointer;
+    padding: 10px !important;
+    margin: 0;
+}
+
+/* team dropdo<wn*/
+
+/*both dropdowns*/
+
+.servicesDropdown,
+.teamDropdown{
+    position: absolute;
+    top: 23px;
+    left: 0;
+    width: 200px;
+    height: auto;
+    background: white;
+    box-shadow: 5px 7px 9px 0px rgba(0,0,0,0.69);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: 999;
+}
+
+
+
+
+.services:hover .servicesDropdown,
+.team:hover .teamDropdown {
+    visibility: visible;
+    opacity: 1;
+}
+/*both dropdowns*/
+
+/* // header */
+
+aside{
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: white;
+    z-index: 99999;
+    display: flex;
+    transition: .8s ease;
+}
+aside .asc{
+    height: fit-content;
+    margin: 10px 10px 0  auto;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+aside ul{
+    margin-top: 50px;
+    height: 64%;
+}
+
+aside li{
+    padding: 12px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion{
+    width: 57vw;
+    padding: 10px 0 0 10px;
+    display: none;
+    max-height: 0;
+    transition: max-height .4s ease;
+}
+.accshow{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.price, .chome{
+    padding: 4px 0 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer */
+.container-fluid{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.contact-info{
+    color: black;
+    display: grid;
+}
+.contact-info i {
+    transform: scale(1.4);
+    padding-right: 17px;
+    color: pink;
+}
+
+.contact-info section{
+    display: flex;
+    align-items: center;
+}
+.inf span{
+    color: grey;
+}
+/* .inf{
+    margin-top: 12px;
+} */
+
+
+
+
+
+
+
+
+
+/*icons */
+ .icons .line{
+    width: 1px;
+    height: 20px;
+    background: pink;
+    display: inline-block;
+    transform: translateY(4px);
+}
+ .icons i{
+    padding-inline: 7px ;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+ .icons i:hover{
+    color: pink;
+}
+
+/*icons */
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: grid;
+    place-items: center !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*meidaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+@media (width <= 768px){
+    aside {left: 110%;}
+.hpp{display: none;}
+    /*header*/
+header{min-height: 15vh;}
+nav{ display: none;}
+.menuu{display: block;  color: pink;  cursor: pointer;}
+.icons{align-self: end;  margin-bottom: 20px; }
+.icons i { padding-inline: 10px !important;}
+    /*header*/
+
+
+
+footer{margin-top: 95vh;}    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( 768px <= width <= 992px){
+    header{min-height: 15vh;}
+    nav{ display: none;}
+    .menuu{display: block;  color: pink;  cursor: pointer;}
+    .icons{align-self: end;  margin-bottom: 20px;  padding-inline: 50px;}
+    .icons i {transform: scale(1.2);   padding-inline: 15px !important;}
+    aside {left: 110%;}
+    .hpp{display: none;}
+        /*header*/
+
+}
+
+
+
+
+
+
+
+
+@media (992px <= width <= 1200px  ) {
+    .menuu{display: none;}
+    .icons{margin-right: 35px;}
+}

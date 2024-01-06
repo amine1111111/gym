@@ -1,0 +1,223 @@
+
+
+.contact, .chome{
+    padding: 4px 0 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer */
+.container-fluid{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.contact-info{
+    color: black;
+    display: grid;
+}
+.contact-info i {
+    transform: scale(1.4);
+    padding-right: 17px;
+    color: pink;
+}
+
+.contact-info section{
+    display: flex;
+    align-items: center;
+}
+.inf span{
+    color: grey;
+}
+/* .inf{
+    margin-top: 12px;
+} */
+
+
+
+
+
+.email{
+    padding: 50px 0 0 30px;
+}
+/* form*/
+.email .frm{
+   width: 50%;
+   position: relative;
+   height: 50px;
+   overflow: hidden;
+   margin: 20px 0;
+}
+
+.frm input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    color: white;
+}
+
+.frm label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    color: black;
+}
+
+.frm label:after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid pink;
+    transform: translateX(-100%);
+    transition: .4s ease;
+}
+
+.cname{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .4s ease;
+}
+
+.frm input:focus + .lname .cname,
+.frm input:valid + .lname .cname{
+    transform: translateY(-100%);
+}
+
+.frm input:focus + .lname:after,
+.frm input:valid + .lname:after{
+    transform: translate(0);
+}
+/*  //form*/
+
+/* //footer */
+
+
+
+
+
+
+
+/*icons */
+  .line{
+    width: 1px;
+    height: 20px;
+    background: pink;
+    display: inline-block;
+    transform: translateY(4px);
+}
+ .icons i{
+    padding-inline: 7px ;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+ .icons i:hover{
+    color: pink;
+}
+
+/*icons */
+
+
+
+
+
+.last{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+
+
+
+
+footer{
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+
+
+/*meidaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+@media (width <= 768px){
+    aside {left: 110%;}
+.hpp{display: none;}
+    /*header*/
+header{min-height: 15vh;}
+nav{ display: none;}
+.menuu{display: block;  color: pink;  cursor: pointer;}
+.icons{align-self: end;  margin-bottom: 20px; }
+.icons i { padding-inline: 10px !important;}
+    /*header*/
+
+
+    .container-fluid{grid-template-columns: initial;   height: auto;}
+    .container-fluid button{transform: scale(1.3, 1.1);}
+    
+    
+    .frm input {width: 140% !important;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( 768px <= width <= 992px){
+    header{min-height: 15vh;}
+    nav{ display: none;}
+    .menuu{display: block;  color: pink;  cursor: pointer;}
+    .icons{align-self: end;  margin-bottom: 20px;  padding-inline: 50px;}
+    .icons i {transform: scale(1.2);   padding-inline: 15px !important;}
+    aside {left: 110%;}
+    .hpp{display: none;}
+        /*header*/
+
+}
+
+
+
+
+
+
+
+
+@media (992px <= width <= 1200px  ) {
+    .menuu{display: none;}
+    .icons{margin-right: 35px;}
+}

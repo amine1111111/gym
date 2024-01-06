@@ -1,0 +1,190 @@
+.container{
+    width: 98vw;
+    height: 370px;
+    position: relative;
+}
+
+.container i{
+    position: absolute;
+    top: 50%;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+
+
+.sliderContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto hidden;
+    margin-inline: auto;
+    scrollbar-width: none;
+}
+
+
+.gainer{
+    min-width: 35vw;
+    height: 95%;
+    margin-inline: 2rem;
+    box-shadow: 3px 3px 20px rgba(1 1 1 / 40% );
+    padding-left: 1rem;
+}
+
+.gainer img {
+    width: 75%;
+    height: 80%;
+    object-fit: cover;
+    margin-inline: auto;
+    display: block;
+}
+.gainer span {
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+footer{
+    display: grid;
+    place-items: center;
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.con i{
+    position: absolute;
+    top: 50%;
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 1;
+}
+.p{
+    left: 1%;
+}
+.n{
+    right: 1%;
+}
+
+
+.con{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto hidden;
+    margin-inline: auto;
+    scrollbar-width: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bcon i{
+    position: absolute;
+    top: 50%;
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 1;
+}
+.pr{
+    left: 1%;
+}
+.nx{
+    right: 1%;
+}
+
+
+.bcon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto hidden;
+    margin-inline: auto;
+    scrollbar-width: none;
+}
+
+
+/*meidaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+@media (width <= 768px){
+    aside {left: 110%;}
+.hpp{display: none;}
+    /*header*/
+header{min-height: 15vh;}
+nav{ display: none;}
+.menuu{display: block;  color: pink;  cursor: pointer;}
+.icons{align-self: end;  margin-bottom: 20px; }
+.icons i { padding-inline: 10px !important;}
+    /*header*/
+
+
+
+
+    .container-fluid{ height: auto;}
+    .container-fluid button{transform: scale(1.3, 1.1);}
+
+
+
+
+    .gainer{min-width: 88%;}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( 768px <= width <= 992px){
+    header{min-height: 15vh;}
+    nav{ display: none;}
+    .menuu{display: block;  color: pink;  cursor: pointer;}
+    .icons{align-self: end;  margin-bottom: 20px;  padding-inline: 50px;}
+    .icons i {transform: scale(1.2);   padding-inline: 15px !important;}
+    aside {left: 110%;}
+        /*header*/
+
+}
+
+
+
+
+
+
+
+
+@media (992px <= width <= 1200px  ) {
+    .menuu{display: none;}
+    .icons{margin-right: 35px;}
+}
